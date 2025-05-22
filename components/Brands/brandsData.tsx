@@ -3,10 +3,10 @@ import { Brand } from "@/types/brand";
 const brandsData: Brand[] = [
   {
     id: 1,
-    name: "TaShanto",
-    href: "https://TaShanto.com",
-    image: "/images/brands/TaShanto.svg",
-    imageLight: "/images/brands/TaShanto-light.svg",
+    name: "Ayro UI",
+    href: "https://ayroui.com",
+    image: "/images/brands/ayroui.svg",
+    imageLight: "/images/brands/ayroui-light.svg",
   },
   {
     id: 2,
