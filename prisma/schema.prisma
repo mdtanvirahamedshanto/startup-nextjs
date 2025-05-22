@@ -14,4 +14,106 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model users {
+  id          Int      @id @default(autoincrement())
+  name        String?  @default("User")
+  email       String   @unique
+  password    String
+  image       String?
+  designation String?  @default("Manager")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  blogs       blogs[]
+}
+
+model blogs {
+  id          Int       @id @default(autoincrement())
+  title       String
+  content     String
+  image       String?
+  tags        String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  authorId    Int
+  author      users     @relation(fields: [authorId], references: [id])
+  publishDate DateTime? @default(now())
+}
+
+model socialLinks {
+  id   Int    @id @default(autoincrement())
+  name String
+  link String
+}
+
+model contact {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model about {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  image       String
+  lists       list[]
+}
+
+model list {
+  id        Int      @id @default(autoincrement())
+  title     String
+  aboutId   Int
+  about     about    @relation(fields: [aboutId], references: [id])
+  createdAt DateTime @default(now())
+}
+
+model settings {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model features {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model testimonials {
+  id          Int      @id @default(autoincrement())
+  name        String
+  designation String
+  description String
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model company {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model prices {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+
+  price       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
 

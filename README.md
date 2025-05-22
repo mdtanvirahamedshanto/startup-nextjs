@@ -1,46 +1,40 @@
-# Startup - Free Next.js Startup Website Template
+# Startup Next.js
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+A modern web application powered by [Next.js](https://nextjs.org/).
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## Features
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js 13 and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+- Server-side rendering
+- API routes
+- Fast refresh
+- TypeScript support (optional)
+- Easy deployment
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+## Getting Started
 
-[![Startup Pro](https://cdn.nextjstemplates.com/Startup-Pro---Next.js-Starter-Template-for-SaaS-Startups-282e26f7-f543-4ae4-a777-ac306c08cce8.png)](https://nextjstemplates.com/templates/saas-starter-startup)
+1. **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+2. **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
+3. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+## Scripts
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run start` — Start production server
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+## Learn More
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Deployment Guide](https://nextjs.org/docs/deployment)
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+---
 
-### ⚡ Deploy Now
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
-
-
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
-
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
+© 2024 Md Tanvir Ahamed Shanto
